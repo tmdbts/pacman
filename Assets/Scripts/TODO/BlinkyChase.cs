@@ -5,6 +5,13 @@ using UnityEngine;
 
 public class BlinkyChase : GhostChase
 {
+    /**
+     * Blinky's chase mode is to target the position of Pacman
+     *
+     * @param node The current node that Blinky is on
+     *
+     * @return The direction that Blinky should move in
+     */
     private Vector2 getNextDirection(Node node)
     {
         List<Vector2> availableDirections = getAvailableDirections(node);
