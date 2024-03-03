@@ -9,24 +9,18 @@ public class BlinkyChase : GhostChase
     {
         List<Vector2> availableDirections = getAvailableDirections(node);
         Vector3 pacmanPosition = getPacmanPosition();
-        Vector2 pacmanDirection = getPacmanDirection();
 
         float minDistance = float.MaxValue;
         Vector2 nextDirection = Vector2.zero;
 
         foreach (Vector2 availableDirection in getAvailableDirections(node))
         {
-            if (availableDirection == -currentDirection())
-            {
-                continue;
-            }
+            Vector2 nextPosition = new Vector2(node.transform.position.x, node.transform.position.y) + availableDirection;
+            float distance = Vector2.Distance(nextPosition, pacmanPosition);
 
-            Vector3 nextPosition = currentPosition() + new Vector3(pacmanDirection.x, pacmanDirection.y, 0);
-            float nextDistance = Math.Abs(pacmanPosition.x - nextPosition.x) + Math.Abs(pacmanPosition.y - nextPosition.y);
-
-            if (nextDistance < minDistance)
+            if (distance < minDistance)
             {
-                minDistance = nextDistance;
+                minDistance = distance;
                 nextDirection = availableDirection;
             }
         }
@@ -42,16 +36,6 @@ public class BlinkyChase : GhostChase
         {
 
             setDirection(getNextDirection(node));
-            //Go through the available directions and choose the first that
-            //is not opposite to the current direction
-            // foreach (Vector2 availableDirection in getAvailableDirections(node))
-            // {
-            //     if (availableDirection != -currentDirection())
-            //     {
-            //         setDirection(availableDirection);
-            //         break;
-            //     }
-            // }
         }
 
     }
