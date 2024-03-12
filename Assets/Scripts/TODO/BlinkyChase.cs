@@ -17,17 +17,27 @@ public class BlinkyChase : GhostChase
         List<Vector2> availableDirections = getAvailableDirections(node);
         Vector3 pacmanPosition = getPacmanPosition();
 
-        float minDistance = float.MaxValue;
+        double minDistance = float.MaxValue;
         Vector2 nextDirection = Vector2.zero;
 
         foreach (Vector2 availableDirection in getAvailableDirections(node))
         {
+            if (availableDirection == -currentDirection())
+            {
+                continue;
+            }
+
+            Debug.Log("Current position: " + currentPosition());
+
             Vector2 nextPosition = new Vector2(node.transform.position.x, node.transform.position.y) + availableDirection;
             float distance = Vector2.Distance(nextPosition, pacmanPosition);
+            double manhattanDistance = Math.Sqrt(Math.Pow(nextPosition.x - pacmanPosition.x, 2) + Math.Pow(nextPosition.y - pacmanPosition.y, 2));
 
-            if (distance < minDistance)
+            Debug.Log("Next position: " + nextPosition);
+
+            if (manhattanDistance < minDistance)
             {
-                minDistance = distance;
+                minDistance = manhattanDistance;
                 nextDirection = availableDirection;
             }
         }
