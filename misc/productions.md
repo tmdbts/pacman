@@ -29,12 +29,15 @@ listed in the ghost's section.
 4. ~WW, WN, WS, WE, ~F, C, ~N -> W
 5. ~WN, ~WS, ~WE, ~WW, ~F, C, N -> N | S | E | W
 6. ~WS, ~WN, ~WE, WW, ~F, C, N -> N | S | E
-7. ~WE, ~WN, WS, ~WW, ~F, C, N -> N | E | W
-8. ~WW, WN, ~WS, ~WE, ~F, C, N -> S | E | W
-9. ~WN, WS, ~WE, WW, ~F, C, N -> N | E
+7. ~WN, ~WS, WE, ~WW, ~F, C, N -> N | S | W
+8. ~WE, ~WN, WS, ~WW, ~F, C, N -> N | E | W
+9. ~WW, WN, ~WS, ~WE, ~F, C, N -> S | E | W
 10. ~WS, WN, WW, ~WE, ~F, C, N -> S | E
 11. ~WN, ~WW, WS, WE, ~F, C, N -> N | W
 12. ~WS, ~WW, WN, WE, ~F, C, N -> W | S
+13. ~WN, WS, ~WE, WW, ~F, C, N -> N | E
+14. ~WE, ~WS, WN, WW, ~F, C, N -> N | S
+15. WE, WW, ~WS, ~WN, ~F, C, N -> W | E
 
 # Blinky
 ## Sensors
