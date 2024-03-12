@@ -29,7 +29,7 @@ public class BlinkyChase : GhostChase
 
             Vector2 nextPosition = new Vector2(node.transform.position.x, node.transform.position.y) + availableDirection;
             float distance = Vector2.Distance(nextPosition, pacmanPosition);
-            double manhattanDistance = Math.Sqrt(Math.Pow(nextPosition.x - pacmanPosition.x, 2) + Math.Pow(nextPosition.y - pacmanPosition.y, 2));
+            float manhattanDistance = Math.Abs(nextPosition.x - pacmanPosition.x) + Math.Abs(nextPosition.y - pacmanPosition.y);
 
             if (manhattanDistance < minDistance)
             {
