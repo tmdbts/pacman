@@ -25,6 +25,7 @@ public class InkyChase : GhostChase
             {
                 i = (i + 1) % count;
             }
+
             setDirection(dirs[i]);        
         }
     }
