@@ -26,16 +26,12 @@ public class PinkyChase : GhostChase
             float distance = Vector2.Distance(nextPosition, pacman4UnitsAhead);
             float manhattanDistance = Math.Abs(nextPosition.x - pacman4UnitsAhead.x) + Math.Abs(nextPosition.y - pacman4UnitsAhead.y);
 
-            Debug.Log("Pinky manhattanDistance " + manhattanDistance + " for direcition " + availableDirection);
-
             if (manhattanDistance < minDistance)
             {
                 minDistance = manhattanDistance;
                 nextDirection = availableDirection;
             }
         }
-
-        Debug.LogWarning("Pinky next direction: " + nextDirection);
 
         return nextDirection;
     }
