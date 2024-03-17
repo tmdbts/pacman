@@ -5,6 +5,13 @@ using UnityEngine;
 
 public class PinkyChase : GhostChase
 {
+    /**
+     * Pinky's target is 4 units ahead of Pacman's current position
+     *
+     * @param node The current node that Blinky is on
+     *
+     * @return The direction that Blinky should move in
+     */
     private Vector2 getNextDirection(Node node)
     {
         List<Vector2> availableDirections = getAvailableDirections(node);

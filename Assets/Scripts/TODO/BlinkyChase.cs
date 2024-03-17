@@ -10,7 +10,7 @@ public class BlinkyChase : GhostChase
      *
      * @param node The current node that Blinky is on
      *
-     * @return The direction that Blinky should move in
+     * @return The direction that Blinky should move to
      */
     private Vector2 getNextDirection(Node node)
     {

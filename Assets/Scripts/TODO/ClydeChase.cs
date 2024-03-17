@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class ClydeChase : GhostChase
 {
+    /**
+     * Clyde choses the direction that is farthest from the closest ghost
+     *
+     * @param node The current node that Clyde is on
+     *
+     * @return The direction that Clyde should move to
+     */
     private Vector2 getNextDirection(Node node)
     {
         List<Vector2> availableDirections = getAvailableDirections(node);
