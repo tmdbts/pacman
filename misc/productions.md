@@ -23,21 +23,21 @@ listed in the ghost's section.
 # Inky
 ## Productions
 
-1. ~WN, WS, WE, WW, ~F, C, ~N -> N
-2. ~WS, WN, WE, WW, ~F, C, ~N -> S
-3. ~WE, WN, WS, WW, ~F, C, ~N -> E
-4. ~WW, WN, WS, WE, ~F, C, ~N -> W
-5. ~WN, ~WS, ~WE, ~WW, ~F, C, N -> N | S | E | W
-6. ~WS, ~WN, ~WE, WW, ~F, C, N -> N | S | E
-7. ~WN, ~WS, WE, ~WW, ~F, C, N -> N | S | W
-8. ~WE, ~WN, WS, ~WW, ~F, C, N -> N | E | W
-9. ~WW, WN, ~WS, ~WE, ~F, C, N -> S | E | W
-10. ~WS, WN, WW, ~WE, ~F, C, N -> S | E
-11. ~WN, ~WW, WS, WE, ~F, C, N -> N | W
-12. ~WS, ~WW, WN, WE, ~F, C, N -> W | S
-13. ~WN, WS, ~WE, WW, ~F, C, N -> N | E
-14. ~WE, ~WS, WN, WW, ~F, C, N -> N | S
-15. WE, WW, ~WS, ~WN, ~F, C, N -> W | E
+1. ~WN, ~WS, ~WE, ~WW, ~F, C, N -> N | S | E | W
+2. ~WS, ~WN, ~WE, WW, ~F, C, N -> N | S | E
+3. ~WN, ~WS, WE, ~WW, ~F, C, N -> N | S | W
+4. ~WE, ~WN, WS, ~WW, ~F, C, N -> N | E | W
+5. ~WW, WN, ~WS, ~WE, ~F, C, N -> S | E | W
+7. ~WS, WN, WW, ~WE, ~F, C, N -> S | E
+8. ~WN, ~WW, WS, WE, ~F, C, N -> N | W
+9. ~WS, ~WW, WN, WE, ~F, C, N -> W | S
+10. ~WN, WS, ~WE, WW, ~F, C, N -> N | E
+11. ~WE, ~WS, WN, WW, ~F, C, N -> N | S
+12. WE, WW, ~WS, ~WN, ~F, C, N -> W | E
+13. ~WN, WS, WE, WW, ~F, C, ~N -> N
+14. ~WS, WN, WE, WW, ~F, C, ~N -> S
+15. ~WE, WN, WS, WW, ~F, C, ~N -> E
+16. ~WW, WN, WS, WE, ~F, C, ~N -> W
 
 # Blinky
 ## Sensors
