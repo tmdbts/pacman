@@ -23,18 +23,21 @@ listed in the ghost's section.
 # Inky
 ## Productions
 
-1. ~WN, WS, WE, WW, ~F, C, ~N -> N
-2. ~WS, WN, WE, WW, ~F, C, ~N -> S
-3. ~WE, WN, WS, WW, ~F, C, ~N -> E
-4. ~WW, WN, WS, WE, ~F, C, ~N -> W
-5. ~WN, ~WS, ~WE, ~WW, ~F, C, N -> N | S | E | W
-6. ~WS, ~WN, ~WE, WW, ~F, C, N -> N | S | E
-7. ~WE, ~WN, WS, ~WW, ~F, C, N -> N | E | W
-8. ~WW, WN, ~WS, ~WE, ~F, C, N -> S | E | W
-9. ~WN, WS, ~WE, WW, ~F, C, N -> N | E
-10. ~WS, WN, WW, ~WE, ~F, C, N -> S | E
-11. ~WN, ~WW, WS, WE, ~F, C, N -> N | W
-12. ~WS, ~WW, WN, WE, ~F, C, N -> W | S
+1. ~WN, ~WS, ~WE, ~WW, ~F, C, N -> N | S | E | W
+2. ~WS, ~WN, ~WE, WW, ~F, C, N -> N | S | E
+3. ~WN, ~WS, WE, ~WW, ~F, C, N -> N | S | W
+4. ~WE, ~WN, WS, ~WW, ~F, C, N -> N | E | W
+5. ~WW, WN, ~WS, ~WE, ~F, C, N -> S | E | W
+7. ~WS, WN, WW, ~WE, ~F, C, N -> S | E
+8. ~WN, ~WW, WS, WE, ~F, C, N -> N | W
+9. ~WS, ~WW, WN, WE, ~F, C, N -> W | S
+10. ~WN, WS, ~WE, WW, ~F, C, N -> N | E
+11. ~WE, ~WS, WN, WW, ~F, C, N -> N | S
+12. WE, WW, ~WS, ~WN, ~F, C, N -> W | E
+13. ~WN, WS, WE, WW, ~F, C, ~N -> N
+14. ~WS, WN, WE, WW, ~F, C, ~N -> S
+15. ~WE, WN, WS, WW, ~F, C, ~N -> E
+16. ~WW, WN, WS, WE, ~F, C, ~N -> W
 
 # Blinky
 ## Sensors
@@ -55,20 +58,21 @@ listed in the ghost's section.
 7. ~WN, ~WS, ~WE, WW, ~F, C, N, DE -> E
 8. ~WN, ~WS, WE, ~WW, ~F, C, N, DN -> N
 9. ~WN, ~WS, WE, ~WW, ~F, C, N, DS -> S
-10. ~WN, ~WS, WE, ~WW, ~F, C, N, DW -> W
-11. ~WN, WS, ~WE, ~WW, ~F, C, N, DN -> N
-12. ~WN, WS, ~WE, ~WW, ~F, C, N, DE -> E
-13. ~WN, WS, ~WE, ~WW, ~F, C, N, DW -> W
-14. WN, ~WS, WE, ~WW, ~F, C, N, DS -> S
-16. WN, ~WS, WE, ~WW, ~F, C, N, DW -> W
-17. ~WN, ~WS, WE, WW, ~F, C, N, DN -> N
-18. ~WN, ~WS, WE, WW, ~F, C, N, DS -> S
+10. WS, ~WN, ~WE, ~WW, ~F, C, N, DE -> E
+11. WS, ~WN, ~WE, ~WW, ~F, C, N, DN -> N
+12. WS, ~WN, ~WE, ~WW, ~F, C, N, DW -> W
+13. ~WN, ~WS, WE, ~WW, ~F, C, N, DW -> W
+14. ~WN, WS, ~WE, ~WW, ~F, C, N, DN -> N
+15. ~WN, WS, ~WE, ~WW, ~F, C, N, DE -> E
+16. ~WN, WS, ~WE, ~WW, ~F, C, N, DW -> W
+17. WN, ~WS, WE, ~WW, ~F, C, N, DS -> S
+18. WN, ~WS, WE, ~WW, ~F, C, N, DW -> W
 19. ~WN, WS, WE, ~WW, ~F, C, N, DN -> N
 20. ~WN, WS, WE, ~WW, ~F, C, N, DW -> W
-21. WN, WS, ~WE, ~WW, ~F, C, N, DN -> N
-22. WN, WS, ~WE, ~WW, ~F, C, N, DS -> S
-23. ~WN, WS, ~WE, WW, ~F, C, N, DN -> N
-24. ~WN, WS, ~WE, WW, ~F, C, N, DE -> E
+21. ~WN, WS, ~WE, WW, ~F, C, N, DN -> N
+22. ~WN, WS, ~WE, WW, ~F, C, N, DE -> E
+23. WN, ~WS, ~WE, WW, ~F, C, N, DS -> S
+24. WN, ~WS, ~WE, WW, ~F, C, N, DE -> E
 
 # Pinky
 ## Sensors
@@ -89,20 +93,21 @@ listed in the ghost's section.
 7. ~WN, ~WS, ~WE, WW, ~F, C, N, DE -> E
 8. ~WN, ~WS, WE, ~WW, ~F, C, N, DN -> N
 9. ~WN, ~WS, WE, ~WW, ~F, C, N, DS -> S
-10. ~WN, ~WS, WE, ~WW, ~F, C, N, DW -> W
-11. ~WN, WS, ~WE, ~WW, ~F, C, N, DN -> N
-12. ~WN, WS, ~WE, ~WW, ~F, C, N, DE -> E
-13. ~WN, WS, ~WE, ~WW, ~F, C, N, DW -> W
-14. WN, ~WS, WE, ~WW, ~F, C, N, DS -> S
-16. WN, ~WS, WE, ~WW, ~F, C, N, DW -> W
-17. ~WN, ~WS, WE, WW, ~F, C, N, DN -> N
-18. ~WN, ~WS, WE, WW, ~F, C, N, DS -> S
+10. WS, ~WN, ~WE, ~WW, ~F, C, N, DE -> E
+11. WS, ~WN, ~WE, ~WW, ~F, C, N, DN -> N
+12. WS, ~WN, ~WE, ~WW, ~F, C, N, DW -> W
+13. ~WN, ~WS, WE, ~WW, ~F, C, N, DW -> W
+14. ~WN, WS, ~WE, ~WW, ~F, C, N, DN -> N
+15. ~WN, WS, ~WE, ~WW, ~F, C, N, DE -> E
+16. ~WN, WS, ~WE, ~WW, ~F, C, N, DW -> W
+17. WN, ~WS, WE, ~WW, ~F, C, N, DS -> S
+18. WN, ~WS, WE, ~WW, ~F, C, N, DW -> W
 19. ~WN, WS, WE, ~WW, ~F, C, N, DN -> N
 20. ~WN, WS, WE, ~WW, ~F, C, N, DW -> W
-21. WN, WS, ~WE, ~WW, ~F, C, N, DN -> N
-22. WN, WS, ~WE, ~WW, ~F, C, N, DS -> S
-23. ~WN, WS, ~WE, WW, ~F, C, N, DN -> N
-24. ~WN, WS, ~WE, WW, ~F, C, N, DE -> E
+21. ~WN, WS, ~WE, WW, ~F, C, N, DN -> N
+22. ~WN, WS, ~WE, WW, ~F, C, N, DE -> E
+23. WN, ~WS, ~WE, WW, ~F, C, N, DS -> S
+24. WN, ~WS, ~WE, WW, ~F, C, N, DE -> E
 
 # Clyde
 ## Sensors
@@ -123,18 +128,19 @@ listed in the ghost's section.
 7. ~WN, ~WS, ~WE, WW, ~F, C, N, DE -> E
 8. ~WN, ~WS, WE, ~WW, ~F, C, N, DN -> N
 9. ~WN, ~WS, WE, ~WW, ~F, C, N, DS -> S
-10. ~WN, ~WS, WE, ~WW, ~F, C, N, DW -> W
-11. ~WN, WS, ~WE, ~WW, ~F, C, N, DN -> N
-12. ~WN, WS, ~WE, ~WW, ~F, C, N, DE -> E
-13. ~WN, WS, ~WE, ~WW, ~F, C, N, DW -> W
-14. WN, ~WS, WE, ~WW, ~F, C, N, DS -> S
-16. WN, ~WS, WE, ~WW, ~F, C, N, DW -> W
-17. ~WN, ~WS, WE, WW, ~F, C, N, DN -> N
-18. ~WN, ~WS, WE, WW, ~F, C, N, DS -> S
+10. WS, ~WN, ~WE, ~WW, ~F, C, N, DE -> E
+11. WS, ~WN, ~WE, ~WW, ~F, C, N, DN -> N
+12. WS, ~WN, ~WE, ~WW, ~F, C, N, DW -> W
+13. ~WN, ~WS, WE, ~WW, ~F, C, N, DW -> W
+14. ~WN, WS, ~WE, ~WW, ~F, C, N, DN -> N
+15. ~WN, WS, ~WE, ~WW, ~F, C, N, DE -> E
+16. ~WN, WS, ~WE, ~WW, ~F, C, N, DW -> W
+17. WN, ~WS, WE, ~WW, ~F, C, N, DS -> S
+18. WN, ~WS, WE, ~WW, ~F, C, N, DW -> W
 19. ~WN, WS, WE, ~WW, ~F, C, N, DN -> N
 20. ~WN, WS, WE, ~WW, ~F, C, N, DW -> W
-21. WN, WS, ~WE, ~WW, ~F, C, N, DN -> N
-22. WN, WS, ~WE, ~WW, ~F, C, N, DS -> S
-23. ~WN, WS, ~WE, WW, ~F, C, N, DN -> N
-24. ~WN, WS, ~WE, WW, ~F, C, N, DE -> E
+21. ~WN, WS, ~WE, WW, ~F, C, N, DN -> N
+22. ~WN, WS, ~WE, WW, ~F, C, N, DE -> E
+23. WN, ~WS, ~WE, WW, ~F, C, N, DS -> S
+24. WN, ~WS, ~WE, WW, ~F, C, N, DE -> E
 
